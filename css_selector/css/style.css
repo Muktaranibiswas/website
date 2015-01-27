@@ -1,0 +1,101 @@
+.collection {
+    width: 375px;
+    float: left;
+    margin-bottom: 12px;
+}
+
+body {
+    color: #333;
+    font-family: "nyt-cheltenham",georgia,"times new roman",times,serif;
+}
+.wrap:before, .clearfix:before, .control:before, .menu.layout-horizontal:before, .story:before, .story-link:before, .story.theme-main:before, .story.theme-main .story-header .story-meta-footer:before, .page-footer:before, .page-footer nav ul:before, .mobile-navigation section:before, .site-index .split-6-layout:before, .search-form-control:before, .ad.bar1-ad .user-subscriptions-menu:before, .show-all-sharetool-modal.theme-compact .sharetools-menu:before, .notifications-modal .modal-header:before, .notifications-modal .message .message-link:before, .notifications-modal .message .comment-excerpt .commenter:before, .notifications-modal .message.message-unfollow-confirmation:before, .notifications-modal .message.message-unfollow-confirmed:before, .notifications-modal .follow-option:before, .recommendations .recommendations-footer:before, .recommendations .recommendations-header:before, .layout:before, .masthead:before, .masthead .masthead-cap:before, .masthead .quick-navigation:before, .masthead .masthead-meta:before, .masthead .masthead-menu:before, .masthead .flyout-panel:before, .mini-navigation:before, .user-subscriptions .collection:before, .inside-nyt .menu.layout-horizontal:before, .markets-modal .modal-header:before, .markets-modal .modal-content .market-indexes:before, .markets-modal .modal-content .markets-quotes:before, .weather-modal .modal-header:before, .video-section:before, .video-section .section-header:before, .wrap:after, .clearfix:after, .control:after, .menu.layout-horizontal:after, .story:after, .story-link:after, .story.theme-main:after, .story.theme-main .story-header .story-meta-footer:after, .page-footer:after, .page-footer nav ul:after, .mobile-navigation section:after, .site-index .split-6-layout:after, .search-form-control:after, .ad.bar1-ad .user-subscriptions-menu:after, .show-all-sharetool-modal.theme-compact .sharetools-menu:after, .notifications-modal .modal-header:after, .notifications-modal .message .message-link:after, .notifications-modal .message .comment-excerpt .commenter:after, .notifications-modal .message.message-unfollow-confirmation:after, .notifications-modal .message.message-unfollow-confirmed:after, .notifications-modal .follow-option:after, .recommendations .recommendations-footer:after, .recommendations .recommendations-header:after, .layout:after, .masthead:after, .masthead .masthead-cap:after, .masthead .quick-navigation:after, .masthead .masthead-meta:after, .masthead .masthead-menu:after, .masthead .flyout-panel:after, .mini-navigation:after, .user-subscriptions .collection:after, .inside-nyt .menu.layout-horizontal:after, .markets-modal .modal-header:after, .markets-modal .modal-content .market-indexes:after, .markets-modal .modal-content .markets-quotes:after, .weather-modal .modal-header:after, .video-section:after, .video-section .section-header:after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.kicker {
+    color: #4d4d4d;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    font-size: 0.625rem;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 0.6875rem;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+/*.second-column-region .story.theme-summary .story-heading, .third-column-region .story.theme-summary .story-heading {
+    margin-bottom: 4px;
+}*/
+ion .story.theme-summary .story-heading {
+    margin-bottom: 4px;
+}
+.story.theme-summary .story-heading {
+  font-family: "nyt-cheltenham-sh",georgia,"times new roman",times,serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1rem;
+  margin-bottom: 2px;
+}
+.product-label.theme-nyt-now {
+    color: #b3b3b3;
+    display: none;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    font-size: 0.75rem;
+    font-weight: 300;
+    line-height: 0.75rem;
+    text-transform: uppercase;
+}
+.visually-hidden {
+    border: 0 none;
+    clip: rect(0px, 0px, 0px, 0px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.story.theme-summary .story-heading .dot-logo-icon {
+    margin: 5px 0 0 4px;
+    position: absolute;
+}
+.icon.dot-logo-icon {
+    background: url("/assets/homepage/20150120-120354/images/sprite/sprite-no-repeat.png") no-repeat scroll -422px 0 rgba(0, 0, 0, 0);
+    height: 7px;
+    width: 7px;
+}
+.icon {
+    display: inline-block;
+    font-style: normal;
+    line-height: 0;
+    vertical-align: middle;
+}
+.story.theme-summary .thumb, .story.theme-summary .medium-thumb {
+    clear: right;
+    float: right;
+    margin: 3px 0 6px 6px;
+}
+.byline {
+    color: #999;
+    font-family: georgia,"times new roman",times,serif;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.75rem;
+    margin: 4px 0 1px;
+}
+.timestamp {
+    color: #a81817;
+    font-family: "nyt-franklin",arial,helvetica,sans-serif;
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 0.6875rem;
+    margin-left: 0.1em;
+    white-space: nowrap;
+}
+.story.theme-summary .summary {
+    font-family: georgia,"times new roman",times,serif;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.125rem;
+    margin-bottom: 0;
+}

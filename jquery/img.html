@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      .sized{
+          width: 90px;
+          float: left;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+    <img class="img-thumbnail sized" src="img/1.jpg">
+    <img class="img-thumbnail sized" src="img/2.jpg">
+    <img class="img-thumbnail sized" src="img/3.jpg">
+    <img class="img-thumbnail sized" src="img/4.jpg">
+    <img class="img-thumbnail sized" src="img/5.jpg">
+    <img class="img-thumbnail sized" src="img/6.jpg">
+    <img class="img-thumbnail sized" src="img/7.jpg">
+    <img class="img-thumbnail sized" src="img/8.jpg">
+    <img class="img-thumbnail sized" src="img/9.jpg">
+    <img class="img-thumbnail sized" src="img/10.jpg">
+    <button id="button">Next</button>
+
+   </div>
+
+<img id="frameImg" class="img-thumbnail" src="img/7.jpg">
+<script type="text/javascript">
+    //slide show
+   /* $(document).ready(function(){
+        var i=1;
+*/
+        /* $('#button').click(function(){
+         setInterval(function(){
+
+         i++;
+         var url = 'img/' + i + '.jpg'
+         $('#frameImg').attr('src', url);
+         if(i==5){i=0;}
+         },1000);*/
+
+        //image click
+        $(document).ready(function(){
+            var i=1;
+        $('.sized').click(function(){
+            var url = $(this).attr('src');
+            //alert(url);
+           $('#frameImg').attr('src', url);
+        })
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
