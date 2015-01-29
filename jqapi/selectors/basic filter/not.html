@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <input type="checkbox" name="a">
+    <span>Mary</span>
+</div>
+<div>
+    <input type="checkbox" name="b">
+    <span>lcm</span>
+</div>
+<div>
+    <input type="checkbox" name="c" checked="checked">
+    <span>Peter</span>
+</div>
+
+<script type="text/javascript">
+    $( "input:not(:checked) + span" ).css( "background-color", "yellow" );
+    $( "input").attr( "disabled", "disabled" );
+
+</body>
+</html>

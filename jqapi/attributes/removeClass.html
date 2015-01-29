@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+    p {
+    margin: 4px;
+    font-size: 16px;
+    font-weight: bolder;
+    }
+    .blue {
+    color: blue;
+    }
+    .under {
+    text-decoration: underline;
+    }
+    .highlight {
+    background: yellow;
+    }
+
+</style>
+
+
+</head>
+<body>
+
+<p class="blue under">Hello</p>
+<p class="blue under highlight">and</p>
+<p class="blue under">then</p>
+<p class="blue under">Goodbye</p>
+
+
+<script>
+    $( "p:even" ).removeClass( "blue" );
+    $( "p:odd" ).removeClass( "blue under" );
+    $( "p:eq(1)" ).removeClass();
+</script>
+
+
+
+</body>
+</html>

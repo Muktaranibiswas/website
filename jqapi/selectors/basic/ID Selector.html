@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        div {
+            width: 90px;
+            height: 90px;
+            float: left;
+            padding: 5px;
+            margin: 5px;
+            background-color: #eee;
+        }
+    </style>
+
+</head>
+<body>
+
+<div id="myID.entry[0]">id="myID.entry[0]"</div>
+<div id="myID.entry[1]">id="myID.entry[1]"</div>
+<div id="myID.entry[2]">id="myID.entry[2]"</div>
+<script type="text/javascript">
+    $( "#myID\\.entry\\[1\\]" ).css( "border", "3px solid red" );
+</script>
+
+</body>
+</html>

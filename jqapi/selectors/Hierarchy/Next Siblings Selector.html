@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        div, span {
+            display: block;
+            width: 80px;
+            height: 80px;
+            margin: 5px;
+            background: #bfa;
+            float: left;
+            font-size: 14px;
+        }
+        div#small {
+            width: 60px;
+            height: 25px;
+            font-size: 12px;
+            background: #fab;
+        }
+    </style>
+
+</head>
+<body>
+
+
+
+
+<div>div (doesn't match since before #prev)</div>
+<span id="prev">span#prev</span>
+<div>div sibling</div>
+<div>div sibling <div id="small">div niece</div></div>
+<span>span sibling (not div)</span>
+<div>div sibling</div>
+
+<script type="text/javascript">
+    $( "#prev ~ div" ).css( "border", "3px groove blue" );
+</script>
+
+</body>
+</html</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        b {
+            color: red;
+            font-size: 16px;
+            display: block;
+            clear:left;
+        }
+        div, span, p {
+            width: 40px;
+            height: 40px;
+            float: left;
+            margin: 10px;
+            background-color: blue;
+            padding: 3px;
+            color: #000000;
+        }
+    </style>
+
+</head>
+<body>
+
+<span>span</span>
+<p>p</p>
+<p>p</p>
+<div>div</div>
+<span>span</span>
+<p>p</p>
+<div>div</div>
+<b></b>
+
+<script type="text/javascript">
+    var list = $( "div, p, span" )
+            .map( function() {
+                return this.tagName;
+            })
+            .get()
+            .join( ", " );
+    $( "b" ).append( document.createTextNode( list ) );
+</script>
+
+</body>
+</html>

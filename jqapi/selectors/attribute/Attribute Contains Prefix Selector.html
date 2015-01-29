@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        a {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+<a href="example.html" hreflang="en">Some text</a><br>
+<a href="example.html" hreflang="en-UK">Some other text</a><br>
+<a href="example.html" hreflang="english">will not be outlined</a>
+
+<script>
+    $( "a[hreflang|='en']" ).css( "border", "3px dotted green" );
+</script>
+</body>
+</html>

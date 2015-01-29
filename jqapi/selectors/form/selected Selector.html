@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        div {
+            color: red;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<select name="garden" multiple="multiple">
+    <option>Flowers</option>
+    <option selected="selected">Shrubs</option>
+    <option>Trees</option>
+    <option selected="selected">Bushes</option>
+    <option>Grass</option>
+    <option>Dirt</option>
+</select>
+<div></div>
+
+<script type="text/javascript">
+    $( "select" )
+            .change(function() {
+                var str = "";
+                $( "select option:selected" ).each(function() {
+                    str += $( this ).text() + " ";
+                });
+                $( "div" ).text( str );
+            })
+            .trigger( "change" );
+</script>
+
+</body>
+</html

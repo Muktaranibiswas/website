@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        span.solast {
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+<body>
+<div>
+    <span>Corey,</span>
+    <span>Yehuda,</span>
+    <span>Adam,</span>
+    <span>Todd</span>
+</div>
+<div>
+    <span>Jörn,</span>
+    <span>Scott,</span>
+    <span>Timo,</span>
+    <b>Nobody</b>
+</div>
+
+<script type="text/javascript">
+    $( "span:last-of-type" )
+            .css({ color:"red", fontSize:"80%" })
+            .hover(function() {
+                $( this ).addClass( "solast" );
+            }, function() {
+                $( this ).removeClass( "solast" );
+            });
+</script>
+
+</body>
+</html>

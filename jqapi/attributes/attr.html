@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript" src=" http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        p {
+            margin: 20px 0 0;
+        }
+        b {
+            color: blue;
+        }
+
+        em {
+            color: blue;
+            font-weight: bold;
+        }
+        div {
+            color: red;
+        }
+
+
+        img {
+            padding: 10px;
+        }
+        div {
+            color: red;
+            font-size: 24px;
+        }
+
+        div {
+            color: blue;
+        }
+        span {
+            color: red;
+        }
+        b {
+            font-weight: bolder;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+
+<input id="check1" type="checkbox" checked="checked">
+<label for="check1">Check me</label>
+<p></p>
+<p>Once there was a <em title="huge, gigantic">large</em> dinosaur...</p>
+The title of the emphasis is:<div></div>
+<div><b>Attribute of Ajax</b></div>
+
+
+<div>Zero-th <span></span></div>
+<div>First <span></span></div>
+<div>Second <span></span></div>
+<img id="greatphoto" src="brush-seller.jpg" alt="brush seller">
+
+<img title="hat.gif">
+
+
+
+
+
+<script>
+    $( "input" )
+            .change(function() {
+                var $input = $( this );
+                $( "p" ).html( ".attr( 'checked' ): " + $input.attr( "checked" ) + "" +
+                ".prop( 'checked' ): " + $input.prop( "checked" ) + "" +
+                ".is( ':checked' ): " + $input.is( ":checked" ) + "" );
+            })
+            .change();
+
+
+    var title = $( "em" ).attr( "title" );
+    $( "div" ).text( title );
+
+    $( "img" ).attr({
+        src: "/resources/hat.gif",
+        title: "jQuery",
+        alt: "jQuery Logo"
+    });
+
+
+    $( "div" )
+            .attr( "id", function( arr ) {
+                return "div-id" + arr;
+            })
+            .each(function() {
+                $( "span", this ).html( "(id = '" + this.id + "')" );
+            });
+    $( "img" ).attr( "src", function() {
+        return "/resources/" + this.title;
+    });
+
+
+
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
