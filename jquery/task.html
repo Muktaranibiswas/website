@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>form</title>
+
+    <script type="text/javascript" src=" http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+   <!-- <style type="text/css">
+        .sized{
+            width: 200px;
+            float: left;
+        }
+    </style>-->
+</head>
+<body>
+
+
+<div class="container">
+    <br>
+    <div>
+        <p>Welcome! The goal of this course is to take you, you beautiful front end developer you,Welcome! The goal of this course is to take you, you beautiful front end developer you, from someone with very little or no jQuery or JavaScript knowledge and up you to someone who is quite comfortable working with and writing jQuery and JavaScript.</p>
+    </div>
+    <form>
+        <div class="col-md-4">
+
+            <label> Name</label>
+            <input type="text" name="name">
+            <button type="button" class="btn btn-default">click me</button><br>
+            <button type="button" class="btn btn-default" id="foo">Double click</button>
+            <button type="button" class="btn btn-default">Mouse over</button>
+            <button type="button" class="btn btn-default">Mouse out</button>
+        </div>
+
+    </form>
+</div>
+
+<script type="text/javascript">
+
+     /*$(document) .ready(function(){
+
+     alert('I want To Sleep');
+
+     });*/
+
+     $('button').click(function(){
+         alert('The button was click');
+
+     });
+              $(document) .ready(function(){
+             $( "#foo" ).bind( "click", function( event ) {
+                 alert( "The mouse cursor is at (" +
+                 event.pageX + ", " + event.pageY +
+                 ")" );
+             });
+
+
+     });
+
+/*
+
+    var i = 0;
+    $( "div.overout" )
+            .mouseover(function() {
+                i += 1;
+                $( this ).find( "span" ).text( "mouse over x " + i );
+            })
+            .mouseout(function() {
+                $( this ).find( "span" ).text( "mouse out " );
+            });
+    var n = 0;
+    $( "div.enterleave" )
+            .mouseenter(function() {
+                n += 1;
+                $( this ).find( "span" ).text( "mouse enter x " + n );
+            })
+            .mouseleave(function() {
+                $( this ).find( "span" ).text( "mouse leave" );
+            });*/
+/*
+
+    $( "p" )
+            .mouseup(function() {
+                $( this ).append( "<span style='color:#f00;'>Mouse up.</span>" );
+            })
+            .mousedown(function() {
+                $( this ).append( "<span style='color:#00f;'>Mouse down.</span>" );
+            });
+*/
+
+
+</script>
+
+
+</body>
+</html>

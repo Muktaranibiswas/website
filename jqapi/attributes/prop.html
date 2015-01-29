@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+        p {
+            margin: 20px 0 0;
+        }
+        b {
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+<input id="check1" type="checkbox" checked="checked">
+<label for="check1">Check me</label>
+<p></p>
+<script type="text/javascript">
+    $( "input" ).change(function() {
+        var $input = $( this );
+        $( "p" ).html(
+                ".attr( \"checked\" ): " + $input.attr( "checked" ) + "" +
+                ".prop( \"checked\" ): " + $input.prop( "checked" ) + "" +
+                ".is( \":checked\" ): " + $input.is( ":checked" ) ) + "";
+    }).change();
+    </script>
+
+    </body>
+    </html>
